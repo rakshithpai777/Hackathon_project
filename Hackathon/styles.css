@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f8f9fa;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-container, .chat-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+    width: 10%;
+    padding: 10px;
+    margin: 10px 0;
+}
+input{
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+}
+button {
+    font-size: 22px;
+    background: #6c43ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 900vw;
+    height: 500vh;
+    z-index: -1;
+}
+.logout-btn {
+    margin-top: auto;  /* Pushes the button to the bottom */
+    background: #6c43ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+}
+input {
+    font-size: 22px;  /* Makes text inside input larger */
+    padding: 12px;  /* Increases padding for a bigger input box */
+    width: 100%;  /* Ensures input stretches across the container */
+}
+
+#userInput {
+    height: 50px;  /* Adjust height for better visibility */
+    font-size: 20px;  /* Makes the typed text bigger */
+    border: 2px solid #6c43ff;  /* Adds a border for better visibility */
+    border-radius: 8px;  /* Soft rounded corners */
+}
+#chatMessages p {
+    font-size: 22px;  /* Increases the font size of messages */
+    padding: 10px;  /* Adds spacing around messages */
+    line-height: 1.5;  /* Improves readability */
+}
+
+#chatMessages p strong {
+    font-size: 22px;  /* Makes "You:" and "Bot:" labels larger */
+    color: #6c43ff;  /* Adds color for distinction */
+}
